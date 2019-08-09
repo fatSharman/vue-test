@@ -67,7 +67,7 @@ export default {
       aside{
         flex: none;
         max-width: 200px;
-        background-color: antiquewhite;
+        overflow: hidden;
       }
       section{
         flex: 1;
