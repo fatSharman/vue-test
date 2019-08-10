@@ -1,3 +1,5 @@
+import user from './users'
+import common from './common'
 import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
@@ -23,21 +25,8 @@ const store = new Vuex.Store({
         }
       }
     },
-    second: {
-      namespaced: true,
-      state: {
-        count: 0,
-        num: 0
-      },
-      mutations: {
-        set (state, payload) {
-          state.num = payload
-        },
-        increment (state) {
-          state.count++
-        }
-      }
-    }
+    user,
+    common
   }
 })
 

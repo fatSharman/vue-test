@@ -9,7 +9,11 @@
       <aside>
         <navMenu></navMenu>
       </aside>
-      <section></section>
+      <section>
+        <transition model="out-in" name="section">
+          <component :is="componentName"></component>
+        </transition>
+      </section>
     </div>
     <footer></footer>
   </div>
@@ -17,14 +21,17 @@
 
 <script>
 import navMenu from './layout/navMenu'
+import componentTest from './section/component/componentTest'
 export default {
   name: 'HelloWorld',
   components: {
-    navMenu
+    navMenu,
+    componentTest
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      componentName: 'componentTest'
     }
   },
   computed: {
@@ -53,7 +60,7 @@ export default {
     header{
       flex: none;
       height: 64px;
-      background-color: #0fa39e;
+      background-color: #545c64;
       padding: 0 10px 0 16px;
       display: flex;
       flex-wrap: nowrap;
@@ -71,7 +78,8 @@ export default {
       }
       section{
         flex: 1;
-        background-color: bisque;
+        background-color: #ffffff;
+        padding: 16px;
       }
     }
     footer{
@@ -79,5 +87,13 @@ export default {
       height: 100px;
       background-color: black;
     }
+  }
+</style>
+<!--修改elementUI组件样式-->
+<style lang="less">
+  .el-icon-s-fold,.el-icon-s-unfold{
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
   }
 </style>
