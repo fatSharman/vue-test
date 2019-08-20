@@ -6,7 +6,7 @@
         <img src="/static/img/home/jiandan.gif" alt="yunheng" style="width: 130px;height: 40px">
       </a>
       <div class="right">
-        <el-button type="primary" round>登录</el-button>
+        <el-button type="primary" round @click="$router.push('/main')">登录</el-button>
         <el-button type="primary" round>注册</el-button>
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
           <el-menu-item index="1">
