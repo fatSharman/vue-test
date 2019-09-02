@@ -7,7 +7,7 @@ let menuList = [
     'title': '工作台',
     'childList': [
       {
-        'url': '/design/home',
+        'url': '/main/effect',
         'id': 103,
         'pid': 95,
         'title': '工作流',

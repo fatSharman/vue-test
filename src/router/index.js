@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/index'
 import Main from '@/components/main/index'
 import personalInfo from '@/components/main/content/notification'
+import effect from '@/components/main/content/effect'
 
 Vue.use(Router)
 
@@ -17,7 +18,8 @@ export default new Router({
       path: '/main',
       component: Main,
       children: [
-        { path: '', component: personalInfo }
+        { path: '', component: personalInfo },
+        { path: 'effect', component: effect }
       ]
     }
   ]
