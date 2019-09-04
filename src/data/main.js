@@ -10,14 +10,14 @@ let menuList = [
         'url': '/main/effect',
         'id': 103,
         'pid': 95,
-        'title': '工作流',
+        'title': '特效展示',
         'childList': []
       },
       {
-        'url': '/design/news/msg',
+        'url': '/main/basicKnowledge',
         'id': 104,
         'pid': 95,
-        'title': '消息通知',
+        'title': '前端基础',
         'childList': []
       },
       {

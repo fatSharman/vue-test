@@ -27,7 +27,7 @@ export default {
     topHead
   },
   mounted () {
-    document.getElementById('main-business').style.height = window.innerHeight + 'px'
+    document.getElementById('main-business').style.height = document.height + 'px'
   },
   data () {
     return {}
