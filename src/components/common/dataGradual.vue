@@ -6,7 +6,7 @@
     <span>数值变化时间: </span>
     <el-input-number v-model="time" :controls="false" :min="0" size="mini" :step-strictly="true"></el-input-number>
     <p>数值变化展示</p>
-    <strong><i :style="{width: minNum + 'px', transition: 'all ' + time + 'ms ease'}"></i></strong>
+    <strong><i ref="width" :style="{width: minNum + 'px', transition: 'all ' + time + 'ms ease'}"></i></strong> <span>{{width}}</span>
   </div>
 </template>
 
@@ -15,11 +15,13 @@ export default {
   name: 'dataGradual',
   data () {
     return {
-      minNum: 0,
+      minNum: 200,
       maxNum: 500,
-      time: 20000
+      time: 10000,
+      width: 0
     }
-  }
+  },
+  methods: {}
 }
 </script>
 

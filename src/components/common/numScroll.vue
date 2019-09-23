@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     changeNum () {
-      this.num = this.getRandomNum(this.dataList.length)
+      this.num = this.randomNum(this.dataList.length)
       this.render()
     },
     render () {
@@ -66,15 +66,8 @@ export default {
         }
       })
     },
-    getRandomNum (length) {
-      if (!length) {
-        length = 5
-      }
-      let arr = []
-      for (let i = 0; i < length; i++) {
-        arr.push(Math.floor(Math.random() * 10))
-      }
-      return parseInt(arr.join('').toString())
+    randomNum (n) {
+      return parseInt(Math.random() * Math.pow(10, n))
     }
   }
 }

@@ -34,17 +34,17 @@ let menuList = [
   {
     'id': 135,
     'pid': 0,
-    'url': '',
+    'url': '/main/mixins1',
     'icon': 'el-icon-truck',
-    'title': '发货管理',
+    'title': '混入页面1',
     'childList': []
   },
   {
     'id': 99,
     'pid': 0,
-    'url': '',
+    'url': '/main/mixins2',
     'icon': 'el-icon-folder',
-    'title': '文件管理',
+    'title': '混入页面2',
     'childList': []
   },
   {

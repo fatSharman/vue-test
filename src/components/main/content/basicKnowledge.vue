@@ -19,12 +19,30 @@
         ajax跨域的解决方案你可以说几种？
       </div>
     </div>
+    <h3>3D旋转</h3>
+    <div class="transform">
+      <div :class="['box', isTransForm ? 'transform' : '']">
+        <span>1</span>
+        <span>2</span>
+      </div>
+      <el-button type="primary" @click="transform">change</el-button>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'basicKnowledge'
+  name: 'basicKnowledge',
+  data () {
+    return {
+      isTransForm: false
+    }
+  },
+  methods: {
+    transform () {
+      this.isTransForm = !this.isTransForm
+    }
+  }
 }
 </script>
 
@@ -96,6 +114,25 @@ export default {
         background-size: cover;
         filter: blur(80px);
         z-index: -1;
+      }
+    }
+  }
+  /*3D旋转*/
+  .transform{
+    .box{
+      width: 300px;
+      height: 150px;
+      background-color: #666666;
+      margin: 10px;
+      transition: all 400ms ease;
+      &.transform{
+        transform: rotateY(360deg);
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        color: #ffffff;
       }
     }
   }
