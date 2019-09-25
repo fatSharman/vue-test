@@ -9,6 +9,7 @@ import normalTools from '@/components/main/content/normalTools'
 import algorithm from '@/components/main/content/algorithm'
 import mixins1 from '@/components/main/content/mixinsDemo1'
 import mixins2 from '@/components/main/content/mixinsDemo2'
+import charts from '@/components/main/content/charts'
 
 Vue.use(Router)
 
@@ -29,7 +30,8 @@ export default new Router({
         { path: 'normalTools', component: normalTools },
         { path: 'algorithm', component: algorithm },
         { path: 'mixins1', component: mixins1 },
-        { path: 'mixins2', component: mixins2 }
+        { path: 'mixins2', component: mixins2 },
+        { path: 'charts', component: charts }
       ]
     }
   ]

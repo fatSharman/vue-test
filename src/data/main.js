@@ -50,9 +50,9 @@ let menuList = [
   {
     'id': 100,
     'pid': 0,
-    'url': '',
+    'url': '/main/charts',
     'icon': 'el-icon-s-promotion',
-    'title': '促销管理',
+    'title': '图表',
     'childList': []
   },
   {
