@@ -47,9 +47,7 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
-  .home{}
-</style>
+<style scoped lang="less"></style>
 <!--//修改组件样式-->
 <style lang="less">
   .home{
